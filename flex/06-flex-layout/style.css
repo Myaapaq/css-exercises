@@ -63,7 +63,6 @@ a:visited{
 .footer{
   display:flex; 
   justify-content: space-between;
- 
   background-color:#eee;
   padding-left:8px; 
   padding-right: 8px;
