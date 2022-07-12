@@ -2,27 +2,81 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
 }
 
 .header {
   height: 72px;
-  background: darkmagenta;
+  background: rgb(210, 138, 210);
   color: white;
+  /*additions*/
+  display: flex; 
+  align-items: center;
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px;
+  /*margin-top: auto;
+  margin-bottom: auto;*/
 }
 
 .footer {
   height: 72px;
   background: #eee;
-  color: darkmagenta;
+  color:  rgb(210, 138, 210);
+   /*additions*/
+   display: flex; 
+   align-items: center;
+   justify-content: center;
 }
 
 .sidebar {
   width: 300px;
-  background: royalblue;
+  background: rgba(191, 237, 132, 0.936);
+  min-width: 300px;
+  padding: 16px; 
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+
+  /*additions*/
+  padding: 32px; 
+  background: rgba(136, 224, 224, 0.939);
+  width: 200px;
+  height:200px; 
+  border-radius: 25px;
+  
+}
+
+/*added styles*/
+.all-cards{
+  display:flex; 
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  
+  
+}
+.divide{
+  display:flex; 
+  gap: 20px; 
+  flex-grow: 3;
+}
+li{
+  list-style-type:none;
+  margin-bottom: 20px;
+}
+a:link{
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+a:visited{
+  text-decoration: none;
+  color:white; 
 }
